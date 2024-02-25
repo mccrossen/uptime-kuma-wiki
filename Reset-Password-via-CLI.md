@@ -1,7 +1,7 @@
 ## With Docker
 
 ```bash
-docker exec -it <container name> bash
+docker exec -it <container namebash
 npm run reset-password
 ```
 

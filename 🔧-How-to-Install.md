@@ -6,10 +6,10 @@ docker run -d --restart=always -p 3001:3001 -v uptime-kuma:/app/data --name upti
 
 Uptime Kuma is now running on http://localhost:3001
 
-> [!WARNING]
-> Filesystem support for POSIX file locks is required to avoid SQLite database corruption.
-> Be aware of possible [file locking problems](https://www.sqlite.org/howtocorrupt.html#_file_locking_problems) such as those [commonly encountered with NFS](https://www.sqlite.org/faq.html#q5).
-> **Please map the `/app/data`-folder to a local directory or volume.** 
+[!WARNING]
+Filesystem support for POSIX file locks is required to avoid SQLite database corruption.
+Be aware of possible [file locking problems](https://www.sqlite.org/howtocorrupt.html#_file_locking_problems) such as those [commonly encountered with NFS](https://www.sqlite.org/faq.html#q5).
+**Please map the `/app/data`-folder to a local directory or volume.** 
 
 Browse to http://localhost:3001 after started.
 
@@ -112,14 +112,14 @@ https://github.com/louislam/uptime-kuma/wiki/Reverse-Proxy
 
 ## Unofficial & Experimental
 
-> [!WARNING]
-> The following installation methods are provided by the community. They are not tested officially and may be broken in the future release. Use at your own risk.
+[!WARNING]
+The following installation methods are provided by the community. They are not tested officially and may be broken in the future release. Use at your own risk.
 
 ### ☸️ OpenShift 4 and Kubernetes Helm 3 Chart (Unofficial)
 
-> [!NOTE]
-> This Chart relies on a repackaged OCI Container Image, which lets *uptime-kuma* run as **non-root** user.
-> The entire repackage process is automated via GitHub Actions and renovate-bot keeps everything up to date. (feel free to audit it yourself)
+[!NOTE]
+This Chart relies on a repackaged OCI Container Image, which lets *uptime-kuma* run as **non-root** user.
+The entire repackage process is automated via GitHub Actions and renovate-bot keeps everything up to date. (feel free to audit it yourself)
 
 The Containerfile used to rebundle *uptime-kuma*: [rootless Containerfile](https://github.com/k3rnelpan1c-dev/uptime-kuma-helm/blob/main/container/Containerfile)
 

@@ -48,11 +48,11 @@ But trust me, once you learn, you will remember how to configure a cloudflare tu
 
 
 1. Go to [Cloudflare Zero Trust](https://dash.teams.cloudflare.com/).
-2. `Network` > `Tunnels` > `Create a Tunnel`
+2. `Network` `Tunnels` `Create a Tunnel`
 
    <img src="https://github.com/louislam/uptime-kuma-wiki/assets/26258709/6ca4062b-12b8-4516-a1dd-e64a94ae6a4b" width="800" />
 
-3. `Cloudflared` > `Next`
+3. `Cloudflared` `Next`
 
    <img src="https://github.com/louislam/uptime-kuma-wiki/assets/26258709/222f8eba-b807-488b-8059-fb975fb554da" width="800" />
 
@@ -68,7 +68,7 @@ But trust me, once you learn, you will remember how to configure a cloudflare tu
 
    <img src="https://user-images.githubusercontent.com/1336778/160821358-aff29332-6383-447e-a552-dbdeba014a77.png" width="800" />
 
-6. `Settings` > `Reverse Proxy`
+6. `Settings` `Reverse Proxy`
 7. Paste the token into the `Cloudflare Tunnel Token` field.
 8. Click `Start cloudflared`
 9. Go back to `Cloudflare Zero Trust`, if you see your connector, then click `Next`

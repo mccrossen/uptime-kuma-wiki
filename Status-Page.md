@@ -34,9 +34,9 @@ This is my example, they both are from the same instance:
 
 ## Custom Subdirectory / custom html on status pages
 
-> [!CAUTION]
-> For the following to work the [environment variable `UPTIME_KUMA_DISABLE_FRAME_SAMEORIGIN=true`](https://github.com/louislam/uptime-kuma/wiki/Environment-Variables) needs to be set.
-> This allows other pages to include Uptime Kuma as an `iframe` and makes you vulnerable to [`clickjacking`](https://en.wikipedia.org/wiki/Clickjacking). 
+[!CAUTION]
+For the following to work the [environment variable `UPTIME_KUMA_DISABLE_FRAME_SAMEORIGIN=true`](https://github.com/louislam/uptime-kuma/wiki/Environment-Variables) needs to be set.
+This allows other pages to include Uptime Kuma as an `iframe` and makes you vulnerable to [`clickjacking`](https://en.wikipedia.org/wiki/Clickjacking). 
 
 Changing the subdirectory of Uptime Kuma is tracked in https://github.com/louislam/uptime-kuma/pull/1092
 Embedding `script`s/`meta`-tags/... into Uptime Kuma is tracked in https://github.com/louislam/uptime-kuma/issues/3115

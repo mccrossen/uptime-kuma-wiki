@@ -179,7 +179,7 @@ services:
       - uptime-kuma
     restart: always
     environment:
-      DOMAINS: 'status.domain.com -> http://uptime-kuma:3001'
+      DOMAINS: 'status.domain.com -http://uptime-kuma:3001'
       STAGE: 'production' # Don't use production until staging works
       # FORCE_RENEW: 'true'
       WEBSOCKET: 'true'
@@ -221,7 +221,7 @@ docker run -d --restart=always -p 127.0.0.1:3002:3001 -v uptime-kuma:/app/data -
 ![Reverse Proxy](./img/Synology-reverse-proxy.png)
 
 6. Click on the tab *Custom Header*
-7. Click `Create` -> `Websockets`, this automatically fills in the required headers for websockets.
+7. Click `Create` -`Websockets`, this automatically fills in the required headers for websockets.
 
 # Traefik
 ```yml
@@ -239,7 +239,7 @@ Add the above to your `docker-compose.yml` file and replace "YourOwnHostname" wi
 
 You must enable "WebSockets" in Cloudflare Dashboard:
 
-Cloudflare Dashboard -> Network -> Enable WebSockets
+Cloudflare Dashboard -Network -Enable WebSockets
 
 Read more:
 https://github.com/louislam/uptime-kuma/issues/138#issuecomment-890485229
